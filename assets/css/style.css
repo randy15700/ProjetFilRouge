@@ -1,6 +1,212 @@
-.btn-cta
-{
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* header */
+
+.btn-cta {
     color: white;
     background-color: rgb(160, 21, 21);
-    border-radius: 120px 120px 120px 120px / 95px 95px 95px 95px;;
+    border-radius: 120px 120px 120px 120px / 95px 95px 95px 95px;
+    
 }
+.image-header{
+    background-image: url(/assets/images/image-header-index.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    box-sizing: border-box;
+    max-width: 1000px;
+    max-height: 500px;
+    margin:0 auto;
+}
+
+.text-img-header{
+    color: white;
+    max-width: 400px;
+    padding: 20px;
+    font-size: large;
+}
+
+h1{
+    padding: 30px;
+}
+
+.text-header{
+    padding-bottom: 100px;
+    padding-top: 40px;
+   
+}
+#signup-text-header{
+    color: white;
+}
+
+/* newsletter */
+
+.subscribe-cta{
+    border-radius: 15px;
+    background-color: rgb(180, 60, 1);
+    color: white;
+    padding: 40px;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.subscribe-form{
+    text-align: center;
+}
+
+.subscribe-form input{
+    width: 70%;
+    padding: 10px;
+    border: 2px solid white;
+    border-radius: 120px 120px 120px 120px / 95px 95px 95px 95px;
+    background-color:rgb(180, 60, 1) ;
+    color: white;
+    margin: 30px;
+    min-height: 50px;
+}
+
+.subscribe-form button{
+    min-height: 50px;
+    min-width: 150px;
+}
+
+/* contact */
+
+.form-call{
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+#call-back-btn{
+    background-color: rgb(180, 60, 1);
+    color: white;
+    padding: 5px 15px 5px 15px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 120px 120px 120px 120px / 95px 95px 95px 95px;
+    cursor: pointer;
+    min-height: 50px;
+    min-width: 150px;
+}
+
+.form-contact{
+    border-radius: 15px;
+    background-color: rgb(180, 60, 1);
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.form-contact label{
+    display: block;
+    margin: 10px;
+}
+
+.form-contact fieldset{
+    border: none;
+    color: white;
+}
+
+.form-contact input, form textarea{
+    width: 100%;
+    padding: 7px;
+    border: 1px solid white;
+    border-radius: 4px;
+    background-color:rgb(180, 60, 1) ;
+    color: white;
+}
+
+#send-btn{
+    background-color: yellow;
+    color: black;
+    padding: 5px 15px 5px 15px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 120px 120px 120px 120px / 95px 95px 95px 95px;
+    cursor: pointer;
+}
+
+/* signin */
+
+.connect, .connect p{
+    padding: 20px;
+}
+
+.connect h2{
+    padding: 30px;
+}
+
+.connect button{
+    padding: 30px;
+    margin-bottom: 40px;
+}
+
+.form-signin{
+    padding: 20px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+.form-signin fieldset{
+    border: none;
+}
+
+.form-signin label{
+    display: block;
+    margin: 10px;
+}
+
+.form-signin input{
+    width: 70%;
+    min-height: 50px;
+    padding: 7px;
+    margin-bottom: 20px;
+    border: 2px solid rgba(128, 128, 128, 0.678);
+    border-radius: 120px 120px 120px 120px / 95px 95px 95px 95px;
+    color: rgba(128, 128, 128, 0.678);
+}
+
+.form-signin a{
+    color: rgba(128, 128, 128, 0.678);
+    padding: 20px;
+}
+
+.redir-signup{
+    padding-top: 200px;
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    color: aliceblue;
+    background-image:url(/assets/images/img-signin.jpg);
+     
+}  
+
+.redir-signup h2{
+    padding: 30px; 
+}  
+
+.redir-signup p{
+    padding: 30px;
+}  
+
+.redir-signup button{
+    background-color: white;
+    color: black;
+    padding: 5px 15px 5px 15px;
+    margin-top: 20px;
+    margin-bottom: 150px;
+    border: none;
+    border-radius: 120px 120px 120px 120px / 95px 95px 95px 95px;;
+    cursor: pointer;
+    min-height: 50px;
+    min-width: 150px;
+}  

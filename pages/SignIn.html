@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign In</title>
     <link rel="stylesheet" href="../assets/css/style.css">
 </head>
+
 <body>
     <header>
 
@@ -14,13 +16,16 @@
     <main>
 
         <section>
-            <form action="" method="">
+            <form action="" method="" class="form-signin">
+                <div class="connect">
+                    <h2>Connectez-vous!</h2>
 
-                <h2>Connectez-vous!</h2>
-
-
-
-                <p>Ou utilisez vos identifiants</p>
+                    <button type="button"></button>
+                    <button type="button"></button>
+                    <button type="button"></button>
+                    
+                    <p>Ou utilisez vos identifiants</p>
+                </div>
 
                 <fieldset>
                     <div>
@@ -32,13 +37,20 @@
                         <input type="password" name="password" id="pwd" placeholder="Mot de passe" required>
                     </div>
                 </fieldset>
-                <button type="submit">Connexion</button>
 
-                <a href="">Mot de passe oublié?</a>
+                <a href="">Mot de passe oublié?</a> <br>
 
-
-                <p>Pas encore de compte? <a href="SignUp.html">Inscrivez-vous !</a></p>
+                <button type="submit" id="call-back-btn">Connexion</button>
             </form>
+        </section>
+        <section class="redir-signup">
+
+            <h2>Salut, rejoignez-nous</h2>
+
+            <p>Entrez vos informations et rejoignez la communauté de cuisiniers</p>
+
+            <button type="button">Inscrivez-vous</button>
+
         </section>
 
     </main>
@@ -46,6 +58,7 @@
     <footer>
 
     </footer>
-    
+
 </body>
+
 </html>
