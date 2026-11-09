@@ -6,24 +6,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>contact</title>
     <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
 
     <header>
-
         <nav>
-            <a href="../Index.html">Accueil</a>
 
-            <a href="Recipe.html">Recette</a>
+            <div class="banner-left">
+                <a href="../Index.html">Accueil</a>
 
-            <a href="Search.html">Recherche</a>
+                <a href="Recipe.html">Recette</a>
 
-            <a href="contact.html">Contact</a>
+                <a href="Search.html">Recherche</a>
 
-            <a href="SignIn.html">Sign In</a>
+                <a href="contact.html">Contact</a>
+            </div>
 
-            <a href="SignIn.html"><button class="btn-cta">Sign Up</button></a>
+            <div class="banner-right">
+                <i class="fa-solid fa-magnifying-glass"></i>
+
+                <a href="SignIn.html">Sign In</a>
+
+                <a href="SignIn.html"><button class="btn-cta">Sign Up</button></a>
+            </div>
+
         </nav>
 
     </header>
@@ -31,73 +44,95 @@
     <main>
 
         <section>
-            <form action="" method="" class="form-call">
-                <h2>Bonjour, à quoi pensez-vous?</h2>
 
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet minima obcaecati ex, aperiam saepe
-                    repellendus incidunt reiciendis nihil sapiente voluptatum laudantium ducimus dolorum molestias
-                    tempore
-                    vel repellat labore officia cupiditate!</p>
+            <div class="container-contact">
 
-                <button type="submit" id="call-back-btn">Se faire rappeler</button>
+                <div class="container-call">
+                    <form action="" method="" class="form-call">
+                        <h1>Bonjour, à quoi pensez-vous?</h1>
 
-            </form>
-            <form action="" method="" class="form-contact">
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eveniet minima obcaecati ex,
+                            aperiam
+                            saepe
+                            repellendus incidunt reiciendis nihil sapiente voluptatum laudantium ducimus dolorum
+                            molestias
+                            tempore
+                            vel repellat labore officia cupiditate!</p>
+
+                        <button type="submit" id="call-back-btn">Se faire rappeler</button>
+
+                    </form>
+                </div>
+                <div class="container-message">
+                    <form action="" method="" class="form-contact">
 
 
-                <fieldset>
-                    <div>
-                        <label for="name">Nom :</label>
-                        <input type="text" id="name" placeholder="votre nom ici" required>
-                    </div>
-                    <div>
-                        <label for="email">E-mail :</label>
-                        <input type="email" id="email" placeholder="exemple@gmail.com" required>
-                    </div>
-                    <div>
-                        <label for="message">Message :</label>
-                        <textarea rows="5" id="message" placeholder="Votre message ici" required></textarea>
-                    </div>
-                </fieldset>
+                        <fieldset>
+                            <div>
+                                <label for="name">Nom :</label>
+                                <input type="text" id="name" placeholder="votre nom ici" required>
+                            </div>
+                            <div>
+                                <label for="email">E-mail :</label>
+                                <input type="email" id="email" placeholder="exemple@gmail.com" required>
+                            </div>
+                            <div>
+                                <label for="message">Message :</label>
+                                <textarea rows="5" id="message" placeholder="Votre message ici" required></textarea>
+                            </div>
+                        </fieldset>
 
-                <button type="submit" id="send-btn">envoyer</button>
-            </form>
+                        <button type="submit" id="send-btn">envoyer</button>
+                    </form>
+                </div>
+            </div>
+
         </section>
 
     </main>
 
-    <footer>
+    <footer class="container-footer">
+        <div class="link-icons">
+            <a target="_blank" href="https://x.com/"><i class="fa-brands fa-square-x-twitter" id="x"></i></a>
+            <a target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"
+                    id="insta"></i></a>
+            <a target="_blank" href="https://facebook.com"><i class="fa-brands fa-square-facebook" id="fb"></i></a>
+        </div>
+        <div class="container-footer-list">
+            <ul>
 
-        <a target="_blank" href="https://x.com/"><img src="../assets/images/logo-x.png" alt=" lien X"></a>
-        <a target="_blank" href="https://www.instagram.com/"><img src="../assets/images/logo-insta.png"
-                alt="lien instagram"></a>
-        <a target="_blank" href="https://www.facebook.com/"><img src="../assets/images/logo-facebook.png" alt=" lien X"
-                style="width: 100px;"></a>
+                <li><a href="">Présentation</a></li>
+                <li><a href="">Professionnels</a></li>
+                <li><a href="">Magasins</a></li>
 
+            </ul>
+            <ul>
 
-        <ul class="liste-sans-puce">
-            <li><a href="">Présentation</a></li>
-            <li><a href="">Professionnels</a></li>
-            <li><a href="">Magasins</a></li>
-        </ul>
+                <li><a href="">Webinaires</a></li>
+                <li><a href="">Ateliers</a></li>
+                <li><a href="">rencontres locales</a></li>
 
-        <ul class="liste-sans-puce">
-            <li><a href="">Webinaires</a></li>
-            <li><a href="">Ateliers</a></li>
-            <li><a href="">rencontres locales</a></li>
-        </ul>
+            </ul>
+            <ul>
 
-        <ul class="liste-sans-puce">
-            <li><a href="">Nos initiatives</a></li>
-            <li><a href="">Nos engagements</a></li>
-            <li><a href="">Communautés</a></li>
-        </ul>
+                <li><a href="">Nos initiatives</a></li>
+                <li><a href="">Nos engagements</a></li>
+                <li><a href="">Communautés</a></li>
 
-        <ul class="liste-sans-puce">
-            <li><a href="">Formulaire de contact</a></li>
-            <li><a href="">Travailler avec nous</a></li>
-            <li><a href="">Nous rendre visite</a></li>
-        </ul>
+            </ul>
+            <ul>
+
+                <li><a href="">Formulaire de contact</a></li>
+                <li><a href="">Travailler avec nous</a></li>
+                <li><a href="">Nous rendre visite</a></li>
+
+            </ul>
+        </div>
+
+        <div class="copyright">
+            <p>© 2026 Recettes - Tous droits réservés.</p>
+        </div>
+
 
 
     </footer>

@@ -5,103 +5,151 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>accueil</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
     <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
 </head>
 
 <body>
 
     <header>
-        <nav>
-            <a href="index.html">Accueil</a>
+        <nav class="navbar navbar-expand-lg container">
 
-            <a href="pages/Recipe.html">Recette</a>
-
-            <a href="pages/Search.html">Recherche</a>
-
-            <a href="pages/contact.html">Contact</a>
-
-            <a href="pages/SignIn.html">Sign In</a>
-
-            <a href="pages/SignIn.html"><button class="btn-cta">Sign Up</button></a>
-        </nav>
-        <section class="image-header">
-            <div class="text-img-header">
-
-                <h1>Choisissez parmis des milliers de recettes</h1>
-
-                <p class="text-header">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus corporis
-                    sit itaque possimus provident
-                    reiciendis expedita quis nihil sint dolore. Omnis enim nemo alias dignissimos placeat suscipit porro
-                    distinctio!
-                    Sed.</p>
-                <a href="pages/SignIn.html" id="signup-text-header">Sign Up today &rarr;</a>
+            <div class="container-fluid col-2 col-md-2 col-lg-5">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+                    aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarScroll">
+                    <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll">
+                        <li class="nav-item"><a href="index.html">Accueil</a></li>
+                        <li class="nav-item"><a href="pages/Recipe.html">Recette</a></li>
+                        <li class="nav-item"><a href="pages/Search.html">Recherche</a></li>
+                        <li class="nav-item"><a href="pages/contact.html">Contact</a></li>
+                    </ul>
+                </div>
             </div>
-        </section>
+
+            <div class="banner-right col-10 col-md-10 col-lg-7">
+                <div class="search-wrapper" id="searchWrapper">
+                    <div class="search-box">
+
+                        <button class="search-btn" id="searchBtn">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </button>
+
+                        <input type="text" class="search-input" id="searchInput" placeholder="Rechercher..." />
+
+                    </div>
+                </div>
+
+
+                <a class="d-none d-md-block" href="pages/SignIn.html">Sign In</a>
+
+                <a class="btn-cta" href="pages/SignIn.html" role="button">Sign Up</a>
+            </div>
+
+        </nav>
+
 
     </header>
 
     <main>
+        <section class="header-section">
+            <div class="image-header">
+                <div class="text-img-header">
 
-        <h2>Recettes</h2>
+                    <h1>Choisissez parmis des milliers de recettes</h1>
 
-
-        <h2>Vidéos</h2>
-
-
-        <form action="" method="" class="subscribe-cta">
-
-            <p>Soyez le premier à être informé des dernières offres, recevez les nouvelles recettes tendances et plus
-                encore !</p>
-            <div class="subscribe-form">
-                <input type="email" name="email" id="newsletter" placeholder="adresse e-mail">
-
-                <button type="submit" id="send-btn">S' abonner</button>
+                    <p class="text-header">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus
+                        corporis
+                        sit itaque possimus provident
+                        reiciendis expedita quis nihil sint dolore. Omnis enim nemo alias dignissimos placeat suscipit
+                        porro
+                        distinctio!
+                        Sed.</p>
+                    <a href="pages/SignIn.html" id="signup-text-header">Sign Up today <i
+                            class="fa-solid fa-arrow-right"></i></a>
+                </div>
             </div>
-        </form>
+        </section>
+        <section class="recettes">
+            <h2>Recettes</h2>
+        </section>
 
+        <section class="Videos">
+            <h2>Vidéos</h2>
+        </section>
+
+        <div class="subscribe">
+            <form action="" method="" class="subscribe-cta">
+        
+                <p>Soyez le premier à être informé des dernières offres, recevez les nouvelles recettes tendances et
+                    plus
+                    encore !</p>
+                <div class="subscribe-form">
+                    <input type="email" name="email" id="newsletter" placeholder="adresse e-mail">
+        
+                    <button type="submit" id="send-btn">S' abonner</button>
+                </div>
+            </form>
+        </div>
 
     </main>
 
-    <footer>
+    <footer class="container-footer">
+        <div class="link-icons">
+            <a target="_blank" href="https://x.com/"><i class="fa-brands fa-square-x-twitter" id="x"></i></a>
+            <a target="_blank" href="https://www.instagram.com/"><i class="fa-brands fa-square-instagram"
+                    id="insta"></i></a>
+            <a target="_blank" href="https://facebook.com"><i class="fa-brands fa-square-facebook" id="fb"></i></a>
+        </div>
+        <div class="container-footer-list container">
+            <div class="row justify-content-center">
+                
+                    <ul class="col-12 col-md-3 col-lg-3 text-center">
 
-        <a target="_blank" href="https://x.com/"><img src="../assets/images/logo-x.png" alt=" lien X"></a>
-        <a target="_blank" href="https://www.instagram.com/"><img src="../assets/images/logo-insta.png"
-                alt="lien instagram"></a>
-        <a target="_blank" href="https://www.facebook.com/"><img src="../assets/images/logo-facebook.png" alt=" lien X"
-                style="width: 100px;"></a>
+                        <li><a href="">Présentation</a></li>
+                        <li><a href="">Mentions légales</a></li>
+                        <li><a href="">Conditions Générales</a></li>
 
+                    </ul>
+                    <ul class="col-12 col-md-3 col-lg-3 text-center">
 
-        <ul class="liste-sans-puce">
-            <li><a href="">Présentation</a></li>
-            <li><a href="">Professionnels</a></li>
-            <li><a href="">Magasins</a></li>
-        </ul>
+                        <li><a href="">Près de chez vous</a></li>
+                        <li><a href="">Nos engagements</a></li>
+                        <li><a href="">Nos partenaires</a></li>
 
-        <ul class="liste-sans-puce">
-            <li><a href="">Webinaires</a></li>
-            <li><a href="">Ateliers</a></li>
-            <li><a href="">rencontres locales</a></li>
-        </ul>
+                    </ul>
+                    <ul class="col-12 col-md-3 col-lg-3 text-center">
 
-        <ul class="liste-sans-puce">
-            <li><a href="">Nos initiatives</a></li>
-            <li><a href="">Nos engagements</a></li>
-            <li><a href="">Communautés</a></li>
-        </ul>
+                        <li><a href="">Formulaire de contact</a></li>
+                        <li><a href="">Travailler avec nous</a></li>
+                        <li><a href="">Nous rendre visite</a></li>
 
-        <ul class="liste-sans-puce">
-            <li><a href="">Formulaire de contact</a></li>
-            <li><a href="">Travailler avec nous</a></li>
-            <li><a href="">Nous rendre visite</a></li>
-        </ul>
+                    </ul>
+                
+            </div>
+        </div>
 
+        <div class="copyright">
+            <p>© 2026 Recettes - Tous droits réservés.</p>
+        </div>
 
 
 
     </footer>
 
-
+    <script src="assets/js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
